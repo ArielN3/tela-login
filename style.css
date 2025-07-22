@@ -159,11 +159,34 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .forgot-link i.material-icons {
   font-size: 1.2rem;
 }
+.popup-hidden {
+  display: none;
+  
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4CAF50;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 /* Animação */
 @keyframes fadeSlideIn {
     0% {
         opacity: 0;
-        transform: translateY(80px);
+        transform: translateY(100px);
     }
     100% {
         opacity: 1;
@@ -173,7 +196,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 /* Classe para animar */
 .animate-login {
-    animation: fadeSlideIn 0.8s ease-out;
+    animation: fadeSlideIn 1s ease-out;
 }
 
 /* Animação do gradiente */
@@ -202,14 +225,16 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-width: 0;
 }
 .img-flutuante {
-  animation: flutuar 3s ease-in-out infinite;
+  animation: flutuar 1.5s ease-in-out infinite;
+  width: 250px;
+  
 }
 
 @keyframes flutuar {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(-0px);
   }
-  50% {
+  60% {
     transform: translateY(-10px);
   }
 }
