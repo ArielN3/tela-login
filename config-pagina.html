@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Premium - Controle de Cardápio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="config-pagina.css">
+    <link rel="shortcut icon" href="logo-casa (1).ico" type="image/x-icon" class="fav">+
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-content">
+            <img src="logo-casa.png" alt="fda" class="logo">
+            <div class="logo">Casa do Hamburguer Admin</div>
+            <div class="user-menu">
+                <span>Olá, Laercio</span>
+                <button class="btn btn-sm btn-primary" id="logoutBtn">
+    <i class="fas fa-sign-out-alt"></i> Sair
+</button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="admin-container">
+        <div class="admin-nav">
+            <div class="nav-tabs">
+                <div class="nav-tab active">
+                    <i class="fas fa-utensils"></i> Cardápio
+                </div>
+                <div class="nav-tab">
+                    <i class="fas fa-chart-line"></i> Relatórios
+                </div>
+                <div class="nav-tab">
+                    <i class="fas fa-cog"></i> Configurações
+                </div>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Pesquisar itens...">
+            <button class="btn btn-primary">
+                <i class="fas fa-search"></i> Buscar
+            </button>
+        </div>
+        
+        <div class="menu-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-utensils"></i> Refeições
+                </h2>
+                <button class="btn btn-success" id="addMealBtn">
+                    <i class="fas fa-plus"></i> Adicionar Refeição
+                </button>
+            </div>
+            
+            <div class="item-grid">
+                <div class="item-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtYnVyZ3VlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');">
+                        <span class="item-badge">Mais vendido</span>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Hambúrguer Clássico</h3>
+                        <p class="item-desc">Pão artesanal, hambúrguer 180g, queijo, alface, tomate e molho especial</p>
+                        <div class="item-footer">
+                            <span class="item-price">R$ 25,90</span>
+                            <div class="item-actions">
+                                <button class="btn btn-primary btn-sm edit-item">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm delete-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmVnYW4lMjBidXJnZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');">
+                        <span class="item-badge">Vegano</span>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Hambúrguer Vegetariano</h3>
+                        <p class="item-desc">Pão integral, hambúrguer de grão-de-bico, queijo vegano e vegetais frescos</p>
+                        <div class="item-footer">
+                            <span class="item-price">R$ 22,50</span>
+                            <div class="item-actions">
+                                <button class="btn btn-primary btn-sm edit-item">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm delete-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJhY29uJTIwYnVyZ2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');">
+                        <span class="item-badge">Novidade</span>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Hambúrguer Bacon</h3>
+                        <p class="item-desc">Pão brioche, hambúrguer 200g, queijo cheddar, bacon crocante e molho barbecue</p>
+                        <div class="item-footer">
+                            <span class="item-price">R$ 28,90</span>
+                            <div class="item-actions">
+                                <button class="btn btn-primary btn-sm edit-item">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm delete-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-glass-martini-alt"></i> Bebidas
+                </h2>
+                <button class="btn btn-success" id="addDrinkBtn">
+                    <i class="fas fa-plus"></i> Adicionar Bebida
+                </button>
+            </div>
+            
+            <div class="item-grid">
+                <div class="item-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1553456558-aff63285bdd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnRkcmlua3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Refrigerante 350ml</h3>
+                        <p class="item-desc">Coca-Cola, Guaraná, Fanta ou Sprite</p>
+                        <div class="item-footer">
+                            <span class="item-price">R$ 6,00</span>
+                            <div class="item-actions">
+                                <button class="btn btn-primary btn-sm edit-item">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm delete-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8anVpY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');">
+                        <span class="item-badge">Natural</span>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Suco Natural 500ml</h3>
+                        <p class="item-desc">Laranja, Abacaxi com Hortelã ou Morango</p>
+                        <div class="item-footer">
+                            <span class="item-price">R$ 8,50</span>
+                            <div class="item-actions">
+                                <button class="btn btn-primary btn-sm edit-item">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm delete-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-french-fries"></i> Acompanhamentos
+                </h2>
+                <button class="btn btn-success" id="addSideBtn">
+                    <i class="fas fa-plus"></i> Adicionar Acompanhamento
+                </button>
+            </div>
+            
+            <div class="item-grid">
+                <div class="item-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJpZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Batata Frita Média</h3>
+                        <p class="item-desc">Batata rústica temperada com alecrim e sal marinho</p>
+                        <div class="item-footer">
+                            <span class="item-price">R$ 12,00</span>
+                            <div class="item-actions">
+                                <button class="btn btn-primary btn-sm edit-item">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm delete-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1633793566548-7e6f8e5e4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b25pb24lMjByaW5nc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');">
+                        <span class="item-badge">Crocante</span>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Onion Rings</h3>
+                        <p class="item-desc">Anéis de cebola empanados e fritos, servidos com molho barbecue</p>
+                        <div class="item-footer">
+                            <span class="item-price">R$ 10,50</span>
+                            <div class="item-actions">
+                                <button class="btn btn-primary btn-sm edit-item">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm delete-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Adicionar/Editar Itens -->
+    <div class="modal" id="itemModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Adicionar Novo Item</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="itemForm">
+                    <div class="form-group">
+                        <label for="itemName" class="form-label">Nome do Item</label>
+                        <input type="text" id="itemName" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="itemCategory" class="form-label">Categoria</label>
+                        <select id="itemCategory" class="form-control" required>
+                            <option value="meal">Refeição</option>
+                            <option value="drink">Bebida</option>
+                            <option value="side">Acompanhamento</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="itemPrice" class="form-label">Preço (R$)</label>
+                        <input type="number" id="itemPrice" class="form-control" step="0.01" min="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="itemDescription" class="form-label">Descrição</label>
+                        <textarea id="itemDescription" class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="itemImage" class="form-label">Imagem (URL)</label>
+                        <input type="text" id="itemImage" class="form-control" placeholder="Cole a URL da imagem">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Status</label>
+                        <div class="status-toggle">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="itemStatus" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <span id="statusLabel">Disponível</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="cancelBtn">Cancelar</button>
+                <button class="btn btn-success" id="saveItemBtn">Salvar Item</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="config-pagina.js"></script>
+</body>
+</html>
