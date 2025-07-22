@@ -18,16 +18,13 @@
         .logo{
             height: 120px;
         }
-        .admin-header {
-            z-index: 1000;
-            position: fixed;
+     .admin-header {
+          
             width: 100%;
-            top: 0;
-             left: 0;
             
             background-color: var(--primary);
             color: white;
-            padding: 0 20px; /* Padding lateral para mobile */
+            padding: 15px 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
