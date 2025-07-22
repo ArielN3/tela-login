@@ -8,7 +8,7 @@
         content="Área administrativa da Casa do Hamburguer - Faça login para gerenciar seu estabelecimento">
     <title>Área Administrativa - Casa do Hamburguer</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo-casa (1).ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,9 +26,9 @@
             <div class="login-card">
                 <header class="login-header">
 
-                   <img src="area-login.png" alt="imagens" class="img-flutuante">
+                   <img src="logo-casa.png" alt="imagens" class="img-flutuante">
 
-                    <h1 id="login-heading" class="login-title">Login</h1>
+                    <h1 id="login-heading" class="login-title">Casa do Hamburguer Adm</h1>
                     <p class="welcome-message">
                         Seja bem-vindo(a) novamente. Faça login para acessar sua conta e gerenciar seu estabelecimento.
                     </p>
@@ -49,11 +49,18 @@
                         <div class="input-field">
                             <i class="material-icons" aria-hidden="true">vpn_key</i>
                             <input type="password" id="senha" name="senha" placeholder="Sua senha"
-                                autocomplete="current-password" required minlength="8" maxlength="20"
+                                autocomplete="current-password" required minlength="4" maxlength="20"
                                 aria-required="true">
                         </div>
                         <br>
-                        <input type="checkbox">Lembre de mim 
+                        <input type="checkbox" id="rememberMe">  
+<label for="rememberMe">Lembre de mim</label>  
+
+<div id="popup" class="popup-hidden">
+  <div class="popup-content">
+    ✓ Senha salva com sucesso!
+  </div>
+</div>
                     </div>
 
                     <button type="submit" class="submit-button">
@@ -66,6 +73,8 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
+    <script src="senha.js"></script>
 </body>
 
 </html>
